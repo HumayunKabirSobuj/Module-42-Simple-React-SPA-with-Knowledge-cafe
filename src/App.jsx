@@ -1,4 +1,5 @@
 import Blogs from "./components/Blogs/Blogs"
+import Bookmarks from "./components/Bookmarks/Bookmarks"
 import Header from "./components/header/Header"
 
 
@@ -7,9 +8,12 @@ function App() {
 
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto ">
       <Header></Header>
-      <Blogs></Blogs>
+      <div className="md:flex items-center">
+        <Blogs></Blogs>
+        <Bookmarks></Bookmarks>
+      </div>
     </div>
   )
 }
